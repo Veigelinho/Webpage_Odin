@@ -1,0 +1,96 @@
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Ubuntu;
+    gap: 10px;
+}
+
+body > * {
+    padding: 15px;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    background-color: #1F2937;
+    color: white;
+    
+    gap: 10px;
+}
+
+.topbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 15px 0 15px;
+}
+
+div .headerlogo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.topbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+}
+
+.topbar ul li a:link, .topbar ul li a:visited{
+    color: white;
+    text-decoration: none;
+}
+
+.intro {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.introleft {
+    max-width: 300px;
+}
+
+.introright {
+    width: 300px;
+    height: auto;
+    /*flex: 1;*/
+}
+
+/*
+Section:information 2
+*/
+
+.information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.kacheln {
+    display: flex;
+    flex-direction: row;    
+    max-width: 1000px;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+div.kacheln > * {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+    max-width: 200px;
+    text-align: center;
+    padding: 15px;
+}
+
+div.kacheln > * > img {
+    max-width: 140px;
+    max-height: auto;
+}
+
