@@ -3,14 +3,18 @@ body {
     flex-direction: column;
     font-family: Ubuntu;
     gap: 10px;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
 }
 
 body > section {
     margin: 15px;
-    max-width: 900px;
+    width: 800px;
     display: flex;
     padding: 10px;
     justify-content: center;
+    
 }
 
 .top {
@@ -57,8 +61,13 @@ div .headerlogo {
     max-width: 300px;
 }
 
+#signup {
+    border-radius: 15px;
+    border-color: white;
+}
+
 #signup:hover {
-    background-color: rgb(71, 76, 158);
+    background-color: rgb(108, 110, 143);
     color: white;
 }
 
@@ -77,6 +86,11 @@ Section:information 2
     justify-content: center;
     align-items: center;
     padding: 0;
+}
+
+.information > h2 {
+    font-weight: bold;
+    font-size: 36px;
 }
 
 div.kacheln {
@@ -107,11 +121,22 @@ div.kacheln > * > img {
 .quote {
     background-color: #E5E7EB;
     flex-direction: column;
+    padding: 0 20px;
+}
 
+.quoteauthor, .quotetext {
+    color: #1F2937;
+}
+
+.quotetext {
+    font-style: italic;
+    font-size: 26px;
+    
 }
 
 .quoteauthor {
     align-self: flex-end;
+    font-weight: bold;
 }
 
 .action {
@@ -122,15 +147,19 @@ div.kacheln > * > img {
 }
 
 .actionbox {
+    border-radius: 30px;
     background-color: #3882F6;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     display: flex;
     gap: 140px;
-    padding: 5px 25px;
+    padding: 5px 30px;
 }
 
-.footer {
-
+.footer, .footer > * {
+    align-self: flex-end;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
 }
